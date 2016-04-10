@@ -1,0 +1,14 @@
+PODS:
+  - MTZImageFacePan (0.1.0)
+
+DEPENDENCIES:
+  - MTZImageFacePan (from `../`)
+
+EXTERNAL SOURCES:
+  MTZImageFacePan:
+    :path: ../
+
+SPEC CHECKSUMS:
+  MTZImageFacePan: f62dee86da74839ba5961c9e04631359d238aee2
+
+COCOAPODS: 0.39.0

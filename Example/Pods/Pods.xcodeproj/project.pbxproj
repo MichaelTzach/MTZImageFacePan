@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15DC5F9E6A172D532E427F2BCF04AFA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		4BE5FD226CFB10B489293CD405D57442 /* MTZImageFacePan-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41373780A2951F26F5CE2E2ECD788F80 /* MTZImageFacePan-dummy.m */; };
+		6C58BA849C20E3DFEC61AD25DEA9FCB4 /* Pods-MTZImageFacePan_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EEDCB4C1AC27BD98BB916925F55E8F0A /* Pods-MTZImageFacePan_Tests-dummy.m */; };
+		A20B6F4E008EEE9B2B0D79C64B86332F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		B4D7FBEA005FEDC9CA55E94D26EB3065 /* MTZImageFacePan-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 992EBD1396349FC61415DB7E3B4EB047 /* MTZImageFacePan-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAC8FA6199138C7FB43689974473D05B /* Pods-MTZImageFacePan_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B27F4D353E7057FF764BC80F5F3710DB /* Pods-MTZImageFacePan_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F586EEB21CBA9EF000D36FC2 /* MTZImageFacePan.h in Headers */ = {isa = PBXBuildFile; fileRef = F586EEB01CBA9EF000D36FC2 /* MTZImageFacePan.h */; };
+		F586EEB31CBA9EF000D36FC2 /* MTZImageFacePan.m in Sources */ = {isa = PBXBuildFile; fileRef = F586EEB11CBA9EF000D36FC2 /* MTZImageFacePan.m */; };
+		F832014304EE9D9D78EA2A77B0D88DC3 /* MTZImageFacePan.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 21EBD793F25A641B46280838682454FF /* MTZImageFacePan.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A07104C92E9605B36B990CD63C64C92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DBE506C811B7468194CF11010FEAC57;
+			remoteInfo = "MTZImageFacePan-MTZImageFacePan";
+		};
+		D127BF50885400E4271FF588855A51C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9398B7F232E40A764944A3ABD46B389B;
+			remoteInfo = MTZImageFacePan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		21EBD793F25A641B46280838682454FF /* MTZImageFacePan.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTZImageFacePan.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		41373780A2951F26F5CE2E2ECD788F80 /* MTZImageFacePan-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MTZImageFacePan-dummy.m"; sourceTree = "<group>"; };
+		492D4318AD11B121F9EF524408D1DF6A /* MTZImageFacePan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MTZImageFacePan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		495AC162D5D412D7C3EDB17363B31049 /* Pods-MTZImageFacePan_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MTZImageFacePan_Tests-resources.sh"; sourceTree = "<group>"; };
+		546BA8B1BE551BF21F08FBD796481274 /* MTZImageFacePan.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MTZImageFacePan.modulemap; sourceTree = "<group>"; };
+		6A44AD494A6D64B91C18363449FBC9EE /* Pods-MTZImageFacePan_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MTZImageFacePan_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		992EBD1396349FC61415DB7E3B4EB047 /* MTZImageFacePan-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MTZImageFacePan-umbrella.h"; sourceTree = "<group>"; };
+		9966E5E8B72240324E4704132A52CEA0 /* Pods-MTZImageFacePan_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MTZImageFacePan_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		9CF5D0AAFB9F109BA0D35EAFB567D19F /* MTZImageFacePan.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MTZImageFacePan.xcconfig; sourceTree = "<group>"; };
+		A12516048F08CC4A761F0C30E0DF9473 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5CC384CEEF53B3A4DBD560EFA0D8426 /* Pods-MTZImageFacePan_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MTZImageFacePan_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B27F4D353E7057FF764BC80F5F3710DB /* Pods-MTZImageFacePan_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MTZImageFacePan_Tests-umbrella.h"; sourceTree = "<group>"; };
+		B65733869E59BDC498ADF53BC82A66C8 /* MTZImageFacePan-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MTZImageFacePan-prefix.pch"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BCF9E65B37B9263A3AA48F883999A2D3 /* Pods-MTZImageFacePan_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MTZImageFacePan_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		C0002F9D6D02B745FB2BBB4C9AB11248 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9084B27FB36361F428048FECD0194AA /* Pods_MTZImageFacePan_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTZImageFacePan_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF6FBE2D52B03725156B7452ACA685CF /* Pods-MTZImageFacePan_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MTZImageFacePan_Tests.modulemap"; sourceTree = "<group>"; };
+		E3F32EF9C921E7602CB5B61318AD1E7A /* Pods-MTZImageFacePan_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MTZImageFacePan_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EEDCB4C1AC27BD98BB916925F55E8F0A /* Pods-MTZImageFacePan_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MTZImageFacePan_Tests-dummy.m"; sourceTree = "<group>"; };
+		F586EEB01CBA9EF000D36FC2 /* MTZImageFacePan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTZImageFacePan.h; sourceTree = "<group>"; };
+		F586EEB11CBA9EF000D36FC2 /* MTZImageFacePan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTZImageFacePan.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		650B4133E927672FDAE158CD2056D7C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BF63DBF49D662A7A8D4AC2EDFE49316 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20B6F4E008EEE9B2B0D79C64B86332F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCD1086A56BF754BD69E73BBE411636D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15DC5F9E6A172D532E427F2BCF04AFA0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08C6C62D695533AFF5815DB21C91D0D6 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D3002B723E4EAC0505BC02DDD8527EE /* MTZImageFacePan */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		4B343F2390D2926DD3F07D82FD48E7A4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F586EEB01CBA9EF000D36FC2 /* MTZImageFacePan.h */,
+				F586EEB11CBA9EF000D36FC2 /* MTZImageFacePan.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4B7C040C7763B4B1B8BE36C298F2F8E4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C06626748B7A2A646871A30C4727924E /* Pods-MTZImageFacePan_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		64809B6CFBD185FB4B49227FA05AFF54 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				4B343F2390D2926DD3F07D82FD48E7A4 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		6D3002B723E4EAC0505BC02DDD8527EE /* MTZImageFacePan */ = {
+			isa = PBXGroup;
+			children = (
+				64809B6CFBD185FB4B49227FA05AFF54 /* Pod */,
+				AD3862D5F367648CEBC21AEE5AFC160E /* Support Files */,
+			);
+			name = MTZImageFacePan;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				08C6C62D695533AFF5815DB21C91D0D6 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				D9013F94BDEFB459E7F3D1379854FA22 /* Products */,
+				4B7C040C7763B4B1B8BE36C298F2F8E4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		AD3862D5F367648CEBC21AEE5AFC160E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0002F9D6D02B745FB2BBB4C9AB11248 /* Info.plist */,
+				546BA8B1BE551BF21F08FBD796481274 /* MTZImageFacePan.modulemap */,
+				9CF5D0AAFB9F109BA0D35EAFB567D19F /* MTZImageFacePan.xcconfig */,
+				41373780A2951F26F5CE2E2ECD788F80 /* MTZImageFacePan-dummy.m */,
+				B65733869E59BDC498ADF53BC82A66C8 /* MTZImageFacePan-prefix.pch */,
+				992EBD1396349FC61415DB7E3B4EB047 /* MTZImageFacePan-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MTZImageFacePan";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C06626748B7A2A646871A30C4727924E /* Pods-MTZImageFacePan_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A12516048F08CC4A761F0C30E0DF9473 /* Info.plist */,
+				CF6FBE2D52B03725156B7452ACA685CF /* Pods-MTZImageFacePan_Tests.modulemap */,
+				A5CC384CEEF53B3A4DBD560EFA0D8426 /* Pods-MTZImageFacePan_Tests-acknowledgements.markdown */,
+				E3F32EF9C921E7602CB5B61318AD1E7A /* Pods-MTZImageFacePan_Tests-acknowledgements.plist */,
+				EEDCB4C1AC27BD98BB916925F55E8F0A /* Pods-MTZImageFacePan_Tests-dummy.m */,
+				BCF9E65B37B9263A3AA48F883999A2D3 /* Pods-MTZImageFacePan_Tests-frameworks.sh */,
+				495AC162D5D412D7C3EDB17363B31049 /* Pods-MTZImageFacePan_Tests-resources.sh */,
+				B27F4D353E7057FF764BC80F5F3710DB /* Pods-MTZImageFacePan_Tests-umbrella.h */,
+				9966E5E8B72240324E4704132A52CEA0 /* Pods-MTZImageFacePan_Tests.debug.xcconfig */,
+				6A44AD494A6D64B91C18363449FBC9EE /* Pods-MTZImageFacePan_Tests.release.xcconfig */,
+			);
+			name = "Pods-MTZImageFacePan_Tests";
+			path = "Target Support Files/Pods-MTZImageFacePan_Tests";
+			sourceTree = "<group>";
+		};
+		D9013F94BDEFB459E7F3D1379854FA22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21EBD793F25A641B46280838682454FF /* MTZImageFacePan.bundle */,
+				492D4318AD11B121F9EF524408D1DF6A /* MTZImageFacePan.framework */,
+				C9084B27FB36361F428048FECD0194AA /* Pods_MTZImageFacePan_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3C9EF5BC432EA264A6DA3E34167A8236 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4D7FBEA005FEDC9CA55E94D26EB3065 /* MTZImageFacePan-umbrella.h in Headers */,
+				F586EEB21CBA9EF000D36FC2 /* MTZImageFacePan.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A30F544993EBFC63521A217679B20D5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAC8FA6199138C7FB43689974473D05B /* Pods-MTZImageFacePan_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1DBE506C811B7468194CF11010FEAC57 /* MTZImageFacePan-MTZImageFacePan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1FE5005C0692A6217705E2E87CA1CE5 /* Build configuration list for PBXNativeTarget "MTZImageFacePan-MTZImageFacePan" */;
+			buildPhases = (
+				F05610BC7275D0DFD60E2D7E86EF84F3 /* Sources */,
+				650B4133E927672FDAE158CD2056D7C2 /* Frameworks */,
+				B8FC6401CE2EB323FD1A93293A679676 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MTZImageFacePan-MTZImageFacePan";
+			productName = "MTZImageFacePan-MTZImageFacePan";
+			productReference = 21EBD793F25A641B46280838682454FF /* MTZImageFacePan.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		56A3A0EC5C7900B9DCF1216A6DFC293A /* Pods-MTZImageFacePan_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7117CAE1312C2F6C0E899F75338A6495 /* Build configuration list for PBXNativeTarget "Pods-MTZImageFacePan_Tests" */;
+			buildPhases = (
+				106620C30DD1F53266516EB5882C368E /* Sources */,
+				CCD1086A56BF754BD69E73BBE411636D /* Frameworks */,
+				7A30F544993EBFC63521A217679B20D5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78498083D7620F78585F1783B34389C5 /* PBXTargetDependency */,
+			);
+			name = "Pods-MTZImageFacePan_Tests";
+			productName = "Pods-MTZImageFacePan_Tests";
+			productReference = C9084B27FB36361F428048FECD0194AA /* Pods_MTZImageFacePan_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9398B7F232E40A764944A3ABD46B389B /* MTZImageFacePan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E68307E38BDD11342C594595416ADC05 /* Build configuration list for PBXNativeTarget "MTZImageFacePan" */;
+			buildPhases = (
+				A8B3E3CF6FD95EF614F4F87396EC9C9F /* Sources */,
+				7BF63DBF49D662A7A8D4AC2EDFE49316 /* Frameworks */,
+				20023270A2B344D2ED581D998A599525 /* Resources */,
+				3C9EF5BC432EA264A6DA3E34167A8236 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAAC86755FC8ED0A1E9259BF4E4D598D /* PBXTargetDependency */,
+			);
+			name = MTZImageFacePan;
+			productName = MTZImageFacePan;
+			productReference = 492D4318AD11B121F9EF524408D1DF6A /* MTZImageFacePan.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = D9013F94BDEFB459E7F3D1379854FA22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9398B7F232E40A764944A3ABD46B389B /* MTZImageFacePan */,
+				1DBE506C811B7468194CF11010FEAC57 /* MTZImageFacePan-MTZImageFacePan */,
+				56A3A0EC5C7900B9DCF1216A6DFC293A /* Pods-MTZImageFacePan_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20023270A2B344D2ED581D998A599525 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F832014304EE9D9D78EA2A77B0D88DC3 /* MTZImageFacePan.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8FC6401CE2EB323FD1A93293A679676 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		106620C30DD1F53266516EB5882C368E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C58BA849C20E3DFEC61AD25DEA9FCB4 /* Pods-MTZImageFacePan_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8B3E3CF6FD95EF614F4F87396EC9C9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F586EEB31CBA9EF000D36FC2 /* MTZImageFacePan.m in Sources */,
+				4BE5FD226CFB10B489293CD405D57442 /* MTZImageFacePan-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F05610BC7275D0DFD60E2D7E86EF84F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		78498083D7620F78585F1783B34389C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MTZImageFacePan;
+			target = 9398B7F232E40A764944A3ABD46B389B /* MTZImageFacePan */;
+			targetProxy = D127BF50885400E4271FF588855A51C2 /* PBXContainerItemProxy */;
+		};
+		CAAC86755FC8ED0A1E9259BF4E4D598D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MTZImageFacePan-MTZImageFacePan";
+			target = 1DBE506C811B7468194CF11010FEAC57 /* MTZImageFacePan-MTZImageFacePan */;
+			targetProxy = 4A07104C92E9605B36B990CD63C64C92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03CA91998D6773EC5D02B3DB87B8353E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		47BB479BFD30A1305D03F4AA5A7BF528 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9966E5E8B72240324E4704132A52CEA0 /* Pods-MTZImageFacePan_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MTZImageFacePan_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MTZImageFacePan_Tests/Pods-MTZImageFacePan_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MTZImageFacePan_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		51E108402AEEC37F24D129B6FFE2151A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CF5D0AAFB9F109BA0D35EAFB567D19F /* MTZImageFacePan.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MTZImageFacePan/MTZImageFacePan-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MTZImageFacePan/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MTZImageFacePan/MTZImageFacePan.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MTZImageFacePan;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5B4973DFA6D8C8B41056FF8068239DB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CF5D0AAFB9F109BA0D35EAFB567D19F /* MTZImageFacePan.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = MTZImageFacePan;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		66918E63E122E9817F589EB2488B113D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CF5D0AAFB9F109BA0D35EAFB567D19F /* MTZImageFacePan.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = MTZImageFacePan;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		82A7727CAC6D006F9EBB7A6F7C33A22C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CF5D0AAFB9F109BA0D35EAFB567D19F /* MTZImageFacePan.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MTZImageFacePan/MTZImageFacePan-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MTZImageFacePan/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MTZImageFacePan/MTZImageFacePan.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MTZImageFacePan;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C3EB65B4DFB7B068757F76AE38FF25DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A44AD494A6D64B91C18363449FBC9EE /* Pods-MTZImageFacePan_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MTZImageFacePan_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MTZImageFacePan_Tests/Pods-MTZImageFacePan_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MTZImageFacePan_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */,
+				03CA91998D6773EC5D02B3DB87B8353E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7117CAE1312C2F6C0E899F75338A6495 /* Build configuration list for PBXNativeTarget "Pods-MTZImageFacePan_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47BB479BFD30A1305D03F4AA5A7BF528 /* Debug */,
+				C3EB65B4DFB7B068757F76AE38FF25DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1FE5005C0692A6217705E2E87CA1CE5 /* Build configuration list for PBXNativeTarget "MTZImageFacePan-MTZImageFacePan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B4973DFA6D8C8B41056FF8068239DB2 /* Debug */,
+				66918E63E122E9817F589EB2488B113D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E68307E38BDD11342C594595416ADC05 /* Build configuration list for PBXNativeTarget "MTZImageFacePan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82A7727CAC6D006F9EBB7A6F7C33A22C /* Debug */,
+				51E108402AEEC37F24D129B6FFE2151A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
