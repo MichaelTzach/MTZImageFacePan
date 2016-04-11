@@ -2,7 +2,7 @@
 //  MTZImageFacePanTests.m
 //  MTZImageFacePanTests
 //
-//  Created by Michael Tzach on 04/10/2016.
+//  Created by Michael Tzach on 04/11/2016.
 //  Copyright (c) 2016 Michael Tzach. All rights reserved.
 //
 

@@ -10,68 +10,12 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
-		<key>035EAB2FFBD539EDA9F7DD73</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>LICENSE</string>
-			<key>path</key>
-			<string>../LICENSE</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0A152AD3DFB0E120D08BE176</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>MTZImageFacePan.podspec</string>
-			<key>path</key>
-			<string>../MTZImageFacePan.podspec</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>21A17E7F2E9FD2487FAD8DBC</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>2758D85EFCCFB7F78079F883</key>
+		<key>36BBB9C836466847E2220060</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>FCA771160273C9782B452BDB</string>
-				<string>571216804AAB3159075D8C6B</string>
+				<string>B6F0AC559461768114D4B204</string>
+				<string>BC3792F5CA4DA2FAB6605159</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -80,22 +24,7 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>571216804AAB3159075D8C6B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-MTZImageFacePan_Tests.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-MTZImageFacePan_Tests/Pods-MTZImageFacePan_Tests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5D66FBD869D871D4041586D9</key>
+		<key>3C2072B92A2EEEC59300D5D7</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
@@ -119,6 +48,32 @@ fi
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
 		</dict>
+		<key>3DA229EF498B939588C3868C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>LICENSE</string>
+			<key>path</key>
+			<string>../LICENSE</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5BFA56F6E91DD8CF23A135FB</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_MTZImageFacePan_Tests.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
 		<key>6003F581195388D10070C39A</key>
 		<dict>
 			<key>children</key>
@@ -127,7 +82,7 @@ fi
 				<string>6003F5B5195388D20070C39A</string>
 				<string>6003F58C195388D20070C39A</string>
 				<string>6003F58B195388D20070C39A</string>
-				<string>2758D85EFCCFB7F78079F883</string>
+				<string>36BBB9C836466847E2220060</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -218,7 +173,7 @@ fi
 				<string>6003F58F195388D20070C39A</string>
 				<string>6003F591195388D20070C39A</string>
 				<string>6003F5AF195388D20070C39A</string>
-				<string>713AD93FFA99FC7F3BB5D3A4</string>
+				<string>5BFA56F6E91DD8CF23A135FB</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -288,7 +243,7 @@ fi
 				<string>6003F5B0195388D20070C39A</string>
 				<string>6003F5B2195388D20070C39A</string>
 				<string>6003F5B1195388D20070C39A</string>
-				<string>E1DE9E127DEF6F475005E573</string>
+				<string>D260F87199AE83CFBE221CA1</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
@@ -314,12 +269,12 @@ fi
 			<string>6003F5C2195388D20070C39A</string>
 			<key>buildPhases</key>
 			<array>
-				<string>21A17E7F2E9FD2487FAD8DBC</string>
+				<string>97D0887565419A400EE6045C</string>
 				<string>6003F5AA195388D20070C39A</string>
 				<string>6003F5AB195388D20070C39A</string>
 				<string>6003F5AC195388D20070C39A</string>
-				<string>5D66FBD869D871D4041586D9</string>
-				<string>9CA2495A13428F00B3651692</string>
+				<string>3C2072B92A2EEEC59300D5D7</string>
+				<string>83C119B3084A0E03D06A71B6</string>
 			</array>
 			<key>buildRules</key>
 			<array/>
@@ -630,7 +585,7 @@ fi
 		<key>6003F5C3195388D20070C39A</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>FCA771160273C9782B452BDB</string>
+			<string>B6F0AC559461768114D4B204</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>FRAMEWORK_SEARCH_PATHS</key>
@@ -667,7 +622,7 @@ fi
 		<key>6003F5C4195388D20070C39A</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>571216804AAB3159075D8C6B</string>
+			<string>BC3792F5CA4DA2FAB6605159</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>FRAMEWORK_SEARCH_PATHS</key>
@@ -711,9 +666,9 @@ fi
 		<dict>
 			<key>children</key>
 			<array>
-				<string>0A152AD3DFB0E120D08BE176</string>
-				<string>D03731E8D27F5383CAC500A5</string>
-				<string>035EAB2FFBD539EDA9F7DD73</string>
+				<string>BCDAF18BDA3E8574055BBAF1</string>
+				<string>91FFD0DA6F49CC4B616D793E</string>
+				<string>3DA229EF498B939588C3868C</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -722,20 +677,7 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>713AD93FFA99FC7F3BB5D3A4</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_MTZImageFacePan_Tests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>9CA2495A13428F00B3651692</key>
+		<key>83C119B3084A0E03D06A71B6</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
@@ -759,7 +701,7 @@ fi
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
 		</dict>
-		<key>D03731E8D27F5383CAC500A5</key>
+		<key>91FFD0DA6F49CC4B616D793E</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -772,14 +714,37 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E1DE9E127DEF6F475005E573</key>
+		<key>97D0887565419A400EE6045C</key>
 		<dict>
-			<key>fileRef</key>
-			<string>713AD93FFA99FC7F3BB5D3A4</string>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
 		</dict>
-		<key>FCA771160273C9782B452BDB</key>
+		<key>B6F0AC559461768114D4B204</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -793,6 +758,41 @@ fi
 			<string>Pods/Target Support Files/Pods-MTZImageFacePan_Tests/Pods-MTZImageFacePan_Tests.debug.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BC3792F5CA4DA2FAB6605159</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-MTZImageFacePan_Tests.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-MTZImageFacePan_Tests/Pods-MTZImageFacePan_Tests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BCDAF18BDA3E8574055BBAF1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>MTZImageFacePan.podspec</string>
+			<key>path</key>
+			<string>../MTZImageFacePan.podspec</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D260F87199AE83CFBE221CA1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5BFA56F6E91DD8CF23A135FB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 	</dict>
 	<key>rootObject</key>

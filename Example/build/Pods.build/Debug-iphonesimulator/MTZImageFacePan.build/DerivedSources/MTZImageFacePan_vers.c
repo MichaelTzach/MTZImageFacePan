@@ -1,1 +1,0 @@
- const unsigned char MTZImageFacePanVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:MTZImageFacePan  PROJECT:Pods-1" "\n"; const double MTZImageFacePanVersionNumber __attribute__ ((used)) = (double)1.;

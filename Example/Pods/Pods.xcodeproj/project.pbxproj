@@ -13,8 +13,8 @@
 		A20B6F4E008EEE9B2B0D79C64B86332F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		B4D7FBEA005FEDC9CA55E94D26EB3065 /* MTZImageFacePan-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 992EBD1396349FC61415DB7E3B4EB047 /* MTZImageFacePan-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CAC8FA6199138C7FB43689974473D05B /* Pods-MTZImageFacePan_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B27F4D353E7057FF764BC80F5F3710DB /* Pods-MTZImageFacePan_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F586EEB21CBA9EF000D36FC2 /* MTZImageFacePan.h in Headers */ = {isa = PBXBuildFile; fileRef = F586EEB01CBA9EF000D36FC2 /* MTZImageFacePan.h */; };
-		F586EEB31CBA9EF000D36FC2 /* MTZImageFacePan.m in Sources */ = {isa = PBXBuildFile; fileRef = F586EEB11CBA9EF000D36FC2 /* MTZImageFacePan.m */; };
+		F5AD15EE1CBB9AD200CC3989 /* MTZImageFacePan.h in Headers */ = {isa = PBXBuildFile; fileRef = F5AD15EC1CBB9AD200CC3989 /* MTZImageFacePan.h */; };
+		F5AD15EF1CBB9AD200CC3989 /* MTZImageFacePan.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AD15ED1CBB9AD200CC3989 /* MTZImageFacePan.m */; };
 		F832014304EE9D9D78EA2A77B0D88DC3 /* MTZImageFacePan.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 21EBD793F25A641B46280838682454FF /* MTZImageFacePan.bundle */; };
 /* End PBXBuildFile section */
 
@@ -57,8 +57,8 @@
 		CF6FBE2D52B03725156B7452ACA685CF /* Pods-MTZImageFacePan_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MTZImageFacePan_Tests.modulemap"; sourceTree = "<group>"; };
 		E3F32EF9C921E7602CB5B61318AD1E7A /* Pods-MTZImageFacePan_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MTZImageFacePan_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		EEDCB4C1AC27BD98BB916925F55E8F0A /* Pods-MTZImageFacePan_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MTZImageFacePan_Tests-dummy.m"; sourceTree = "<group>"; };
-		F586EEB01CBA9EF000D36FC2 /* MTZImageFacePan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTZImageFacePan.h; sourceTree = "<group>"; };
-		F586EEB11CBA9EF000D36FC2 /* MTZImageFacePan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTZImageFacePan.m; sourceTree = "<group>"; };
+		F5AD15EC1CBB9AD200CC3989 /* MTZImageFacePan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTZImageFacePan.h; sourceTree = "<group>"; };
+		F5AD15ED1CBB9AD200CC3989 /* MTZImageFacePan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTZImageFacePan.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +99,8 @@
 		4B343F2390D2926DD3F07D82FD48E7A4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F586EEB01CBA9EF000D36FC2 /* MTZImageFacePan.h */,
-				F586EEB11CBA9EF000D36FC2 /* MTZImageFacePan.m */,
+				F5AD15EC1CBB9AD200CC3989 /* MTZImageFacePan.h */,
+				F5AD15ED1CBB9AD200CC3989 /* MTZImageFacePan.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -208,7 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4D7FBEA005FEDC9CA55E94D26EB3065 /* MTZImageFacePan-umbrella.h in Headers */,
-				F586EEB21CBA9EF000D36FC2 /* MTZImageFacePan.h in Headers */,
+				F5AD15EE1CBB9AD200CC3989 /* MTZImageFacePan.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,7 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F586EEB31CBA9EF000D36FC2 /* MTZImageFacePan.m in Sources */,
+				F5AD15EF1CBB9AD200CC3989 /* MTZImageFacePan.m in Sources */,
 				4BE5FD226CFB10B489293CD405D57442 /* MTZImageFacePan-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

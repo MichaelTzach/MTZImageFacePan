@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '8BC1DC6E37C02B39F5BC02DD'
+               BlueprintIdentifier = '5F1BCE3E5434D8A774F19CE7'
                BlueprintName = 'MTZImageFacePan-MTZImageFacePan'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'MTZImageFacePan.bundle'>

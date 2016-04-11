@@ -1,6 +1,0 @@
-framework module MTZImageFacePan {
-  umbrella header "MTZImageFacePan-umbrella.h"
-
-  export *
-  module * { export * }
-}
