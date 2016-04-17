@@ -23,6 +23,12 @@ This method requires you to pass it an options object where you can set a minimu
 #Purpose
 This library is for all the cases where when you are using fill in an imageView and some of the faces in the image are left out of the frame.
 
+#Use Examples
+**Original Image**
+<p align=center>
+    <img src="https://raw.githubusercontent.com/MichaelTzach/MTZImageFacePan/master/Pod/Assets/IMG_0406.jpg" width=200 />
+</p>
+
 ## Installation
 
 **ImagePicker** is available through [CocoaPods](http://cocoapods.org). To install
