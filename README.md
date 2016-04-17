@@ -26,8 +26,15 @@ This library is for all the cases where when you are using fill in an imageView 
 #Use Examples
 **Original Image**
 <p align=center>
-    <img src="https://raw.githubusercontent.com/MichaelTzach/MTZImageFacePan/master/Pod/Assets/IMG_0406.jpg" width=100% />
+<img src="https://raw.githubusercontent.com/MichaelTzach/MTZImageFacePan/master/Pod/Assets/IMG_0406.jpg" width=60% />
 </p>
+**Horizontal Aspect ratio**
+<p align=center>
+<img src="https://github.com/MichaelTzach/MTZImageFacePan/blob/master/Pod/Assets/Screen%20Shot%202016-04-17%20at%203.04.02%20PM.png?raw=true" width=20% />
+<img src="https://github.com/MichaelTzach/MTZImageFacePan/blob/master/Pod/Assets/Screen%20Shot%202016-04-17%20at%203.04.08%20PM.png?raw=true" width=20% />
+<img src="https://github.com/MichaelTzach/MTZImageFacePan/blob/master/Pod/Assets/Screen%20Shot%202016-04-17%20at%203.04.29%20PM.png?raw=true" width=20% />
+</p>
+**More examples in the /Pod/Assets folder**
 
 ## Installation
 
