@@ -26,7 +26,7 @@ This library is for all the cases where when you are using fill in an imageView 
 #Use Examples
 **Original Image**
 <p align=center>
-    <img src="https://raw.githubusercontent.com/MichaelTzach/MTZImageFacePan/master/Pod/Assets/IMG_0406.jpg" width=200 />
+    <img src="https://raw.githubusercontent.com/MichaelTzach/MTZImageFacePan/master/Pod/Assets/IMG_0406.jpg" width=100% />
 </p>
 
 ## Installation
