@@ -83,11 +83,13 @@
         return image;
     }
     
+    faceFeatures = [self filterFaceFeatures:faceFeatures];
+    
     CGRect ciCoordnatesAllFacesRect = [self rectContainingAllFaceBounds:faceFeatures];
     CGRect uiKitCoordinatesAllFacesRect = [self CICoordinatesRectToUIKitCoordinatesRect:ciCoordnatesAllFacesRect inReferenceHeight:image.size.height];
     
     CGRect correctRatioRect = [self expandRect:uiKitCoordinatesAllFacesRect toMatchAspectRatio:options.aspectRatio withMaximumSize:image.size];
-
+    
     CGRect filledRect = [self expandRect:correctRatioRect minimumWidth:options.minimumWidth withOriginalImageSize:image.size];
     filledRect = [self expandRect:filledRect minimumHeight:options.minimumHeight withOriginalImageSize:image.size];
     filledRect = [self expandRect:filledRect maximumScalingFactor:options.maximumZoomFactor withOriginalImageSize:image.size];
@@ -114,6 +116,22 @@
 
 
 #pragma mark - Private
+
++(NSArray<CIFaceFeature *> *)filterFaceFeatures:(NSArray<CIFaceFeature *> *)faceFeatures {
+    NSMutableArray<CIFaceFeature *> *faces = [[NSMutableArray alloc] init];
+    
+    CGFloat biggestFace;
+    for (CIFaceFeature *face in faceFeatures) {
+        biggestFace = MAX(biggestFace, face.bounds.size.width);
+    }
+    
+    for (CIFaceFeature *face in faceFeatures) {
+        if (face.bounds.size.width > biggestFace / 2) {
+            [faces addObject:face];
+        }
+    }
+    return faces;
+}
 
 //rectToExpand should be in the correct aspect ratio
 +(CGRect)expandRect:(CGRect)rectToExpand minimumWidth:(CGFloat)minimumWidth withOriginalImageSize:(CGSize)originalImageSize {
@@ -180,7 +198,7 @@
     
     if (heightScalingFactor <= maximumScalingFactor && widthScalingFactor <= maximumScalingFactor) return rectToExpand; //No need to expand
     
-    CGFloat maxExpandScale = MAX(heightScalingFactor, widthScalingFactor); //The scale we should expand the rect to
+    CGFloat maxExpandScale = MIN(heightScalingFactor, widthScalingFactor); //The scale we should expand the rect to
     CGFloat expandScale = maxExpandScale / maximumScalingFactor;
     
     //At this point we know we should expand the rect with expandScale and that it is bigger than 1
@@ -190,11 +208,7 @@
     CGFloat widthToAdd = finalWidth - rectToExpand.size.width;
     CGFloat heightToAdd = finalHeight - rectToExpand.size.height;
     
-    CGRect retRect = CGRectMake(rectToExpand.origin.x - (widthToAdd / 2), rectToExpand.origin.y - (heightToAdd / 2), finalWidth, finalHeight);
-    
-    //Resize the original image size the the desired aspect ratio
-    CGFloat rectToExpandAR = rectToExpand.size.width / rectToExpand.size.height;
-    originalImageSize = [self shrinkSize:originalImageSize toAspectRatio:rectToExpandAR];
+    CGRect retRect = CGRectMake(rectToExpand.origin.x - (widthToAdd / 2), rectToExpand.origin.y - (heightToAdd / 2), rectToExpand.origin.x + rectToExpand.size.width + (widthToAdd / 2), rectToExpand.origin.y + rectToExpand.size.height + (heightToAdd / 2));
     
     retRect = [self moveRect:retRect intoBounds:originalImageSize];
     
