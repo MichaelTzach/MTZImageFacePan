@@ -83,16 +83,18 @@
         return image;
     }
     
+    CGSize imageSizeWithFixedScale = CGSizeMake(image.size.width * image.scale, image.size.height * image.scale);
+    
     faceFeatures = [self filterFaceFeatures:faceFeatures];
     
     CGRect ciCoordnatesAllFacesRect = [self rectContainingAllFaceBounds:faceFeatures];
-    CGRect uiKitCoordinatesAllFacesRect = [self CICoordinatesRectToUIKitCoordinatesRect:ciCoordnatesAllFacesRect inReferenceHeight:image.size.height];
+    CGRect uiKitCoordinatesAllFacesRect = [self CICoordinatesRectToUIKitCoordinatesRect:ciCoordnatesAllFacesRect inReferenceHeight:imageSizeWithFixedScale.height];
     
-    CGRect correctRatioRect = [self expandRect:uiKitCoordinatesAllFacesRect toMatchAspectRatio:options.aspectRatio withMaximumSize:image.size];
+    CGRect correctRatioRect = [self expandRect:uiKitCoordinatesAllFacesRect toMatchAspectRatio:options.aspectRatio withMaximumSize:imageSizeWithFixedScale];
     
-    CGRect filledRect = [self expandRect:correctRatioRect minimumWidth:options.minimumWidth withOriginalImageSize:image.size];
-    filledRect = [self expandRect:filledRect minimumHeight:options.minimumHeight withOriginalImageSize:image.size];
-    filledRect = [self expandRect:filledRect maximumScalingFactor:options.maximumZoomFactor withOriginalImageSize:image.size];
+    CGRect filledRect = [self expandRect:correctRatioRect minimumWidth:options.minimumWidth withOriginalImageSize:imageSizeWithFixedScale];
+    filledRect = [self expandRect:filledRect minimumHeight:options.minimumHeight withOriginalImageSize:imageSizeWithFixedScale];
+    filledRect = [self expandRect:filledRect maximumScalingFactor:options.maximumZoomFactor withOriginalImageSize:imageSizeWithFixedScale];
     
     return [self cropImage:image toRect:filledRect];
 }
@@ -103,16 +105,19 @@
         return image;
     }
     
+    CGSize imageSizeWithFixedScale = CGSizeMake(image.size.width * image.scale, image.size.height * image.scale);
+    
     CGRect ciCoordnatesAllFacesRect = [self rectContainingAllFaceBounds:faceFeatures];
-    CGRect uiKitCoordinatesAllFacesRect = [self CICoordinatesRectToUIKitCoordinatesRect:ciCoordnatesAllFacesRect inReferenceHeight:image.size.height];
+    CGRect uiKitCoordinatesAllFacesRect = [self CICoordinatesRectToUIKitCoordinatesRect:ciCoordnatesAllFacesRect inReferenceHeight:imageSizeWithFixedScale.height];
     
     CGFloat destinationSizeAspectRatio = destinationSize.width / destinationSize.height;
-    CGRect correctRatioRect = [self expandRect:uiKitCoordinatesAllFacesRect toMatchAspectRatio:destinationSizeAspectRatio withMaximumSize:image.size];
+    CGRect correctRatioRect = [self expandRect:uiKitCoordinatesAllFacesRect toMatchAspectRatio:destinationSizeAspectRatio withMaximumSize:imageSizeWithFixedScale];
     
-    CGRect filledRect = [self expandRect:correctRatioRect toFillSize:image.size inAspectRatio:destinationSizeAspectRatio];
+    CGRect filledRect = [self expandRect:correctRatioRect toFillSize:imageSizeWithFixedScale inAspectRatio:destinationSizeAspectRatio];
     
     return [self cropImage:image toRect:filledRect];
 }
+
 
 
 #pragma mark - Private
