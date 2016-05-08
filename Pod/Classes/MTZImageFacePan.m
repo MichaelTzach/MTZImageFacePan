@@ -205,7 +205,7 @@
     
     if (heightScalingFactor <= maximumScalingFactor && widthScalingFactor <= maximumScalingFactor) return rectToExpand; //No need to expand
     
-    CGFloat maxExpandScale = MIN(heightScalingFactor, widthScalingFactor); //The scale we should expand the rect to
+    CGFloat maxExpandScale = MAX(heightScalingFactor, widthScalingFactor); //The scale we should expand the rect to
     CGFloat expandScale = maxExpandScale / maximumScalingFactor;
     
     //At this point we know we should expand the rect with expandScale and that it is bigger than 1
@@ -215,7 +215,7 @@
     CGFloat widthToAdd = finalWidth - rectToExpand.size.width;
     CGFloat heightToAdd = finalHeight - rectToExpand.size.height;
     
-    CGRect retRect = CGRectMake(rectToExpand.origin.x - (widthToAdd / 2), rectToExpand.origin.y - (heightToAdd / 2), rectToExpand.origin.x + rectToExpand.size.width + (widthToAdd / 2), rectToExpand.origin.y + rectToExpand.size.height + (heightToAdd / 2));
+    CGRect retRect = CGRectMake(rectToExpand.origin.x - (widthToAdd / 2), rectToExpand.origin.y - (heightToAdd / 2), finalWidth, finalHeight);
     
     retRect = [self moveRect:retRect intoBounds:originalImageSize];
     
@@ -264,17 +264,50 @@
 
 +(CGRect)moveRect:(CGRect)rectToMove intoBounds:(CGSize)boundSize {
     CGRect retRect = CGRectMake(rectToMove.origin.x, rectToMove.origin.y, rectToMove.size.width, rectToMove.size.height);
+    
+    CGFloat rectToMoveWidthBiggerThanBounds = rectToMove.size.width - boundSize.width;
+    if (rectToMoveWidthBiggerThanBounds > 0) {
+        //Shrink width
+        retRect.origin.x = 0;
+        retRect.size.width = boundSize.width;
+        
+        //Shrink height to maintain aspect ratio
+        CGFloat shrinkScale = rectToMove.size.width / boundSize.width; //shrinkScale > 1
+        CGFloat finalHeight = rectToMove.size.height / shrinkScale;
+        retRect.origin.y += (finalHeight - retRect.size.height) / 2;
+        retRect.size.height = finalHeight;
+    }
+    
+    CGFloat rectToMoveHeightBiggerThanBounds = rectToMove.size.height - boundSize.height;
+    if (rectToMoveHeightBiggerThanBounds > 0) {
+        //Shrink width
+        retRect.origin.y = 0;
+        retRect.size.height = boundSize.height;
+        
+        //Shrink height to maintain aspect ratio
+        CGFloat shrinkScale = rectToMove.size.height / boundSize.height; //shrinkScale > 1
+        CGFloat finalWidth = rectToMove.size.width / shrinkScale;
+        retRect.origin.x += (finalWidth - retRect.size.width) / 2;
+        retRect.size.width = finalWidth;
+    }
+    
     retRect.origin.x = MAX(0, retRect.origin.x);
     retRect.origin.y = MAX(0, retRect.origin.y);
     
     CGFloat horizontalOutOfBounds = boundSize.width - (retRect.origin.x + retRect.size.width);
     if (horizontalOutOfBounds < 0) {
         retRect.origin.x += horizontalOutOfBounds;
+        if (retRect.origin.x < 0) {
+            retRect.origin.x -= horizontalOutOfBounds / 2;
+        }
     }
     
     CGFloat verticalOutOfBounds = boundSize.height - (retRect.origin.y + retRect.size.height);
     if (verticalOutOfBounds < 0) {
         retRect.origin.y += verticalOutOfBounds;
+        if (retRect.origin.y < 0) {
+            retRect.origin.y -= verticalOutOfBounds / 2;
+        }
     }
     
     return retRect;
