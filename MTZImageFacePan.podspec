@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name              = 'MTZImageFacePan'
-s.version           = '0.1.5'
+s.version           = '0.1.6'
 s.summary           = 'A solution for making sure all faces appear in an image'
 s.homepage          = 'https://github.com/MichaelTzach/MTZImageFacePan'
 s.ios.deployment_target = '7.0'
@@ -14,7 +14,7 @@ s.author            = {
                        'YOURNAME' => 'Michael Tzach'
                         }
 s.source            = {
-:git => 'https://github.com/MichaelTzach/MTZImageFacePan.git', :tag => '0.1.5',
+:git => 'https://github.com/MichaelTzach/MTZImageFacePan.git', :tag => '0.1.6',
                         }
 s.framework = "UIKit"
 s.source_files = 'Pod/Classes/*'
