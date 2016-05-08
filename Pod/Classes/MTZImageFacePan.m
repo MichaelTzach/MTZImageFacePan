@@ -107,6 +107,8 @@
     
     CGSize imageSizeWithFixedScale = CGSizeMake(image.size.width * image.scale, image.size.height * image.scale);
     
+    faceFeatures = [self filterFaceFeatures:faceFeatures];
+    
     CGRect ciCoordnatesAllFacesRect = [self rectContainingAllFaceBounds:faceFeatures];
     CGRect uiKitCoordinatesAllFacesRect = [self CICoordinatesRectToUIKitCoordinatesRect:ciCoordnatesAllFacesRect inReferenceHeight:imageSizeWithFixedScale.height];
     
@@ -125,13 +127,13 @@
 +(NSArray<CIFaceFeature *> *)filterFaceFeatures:(NSArray<CIFaceFeature *> *)faceFeatures {
     NSMutableArray<CIFaceFeature *> *faces = [[NSMutableArray alloc] init];
     
-    CGFloat biggestFace;
+    CGFloat biggestFace = 0;
     for (CIFaceFeature *face in faceFeatures) {
         biggestFace = MAX(biggestFace, face.bounds.size.width);
     }
     
     for (CIFaceFeature *face in faceFeatures) {
-        if (face.bounds.size.width > biggestFace / 2) {
+        if (face.bounds.size.width >= biggestFace / 2.5) {
             [faces addObject:face];
         }
     }
