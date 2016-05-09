@@ -7,6 +7,7 @@
 //
 
 #import "MTZImageFacePan.h"
+#import <ImageIO/ImageIO.h>
 
 
 @implementation MTZImageFacePanOptions
@@ -274,7 +275,7 @@
         //Shrink height to maintain aspect ratio
         CGFloat shrinkScale = rectToMove.size.width / boundSize.width; //shrinkScale > 1
         CGFloat finalHeight = rectToMove.size.height / shrinkScale;
-        retRect.origin.y += (finalHeight - retRect.size.height) / 2;
+        retRect.origin.y -= (finalHeight - retRect.size.height) / 2;
         retRect.size.height = finalHeight;
     }
     
@@ -287,7 +288,7 @@
         //Shrink height to maintain aspect ratio
         CGFloat shrinkScale = rectToMove.size.height / boundSize.height; //shrinkScale > 1
         CGFloat finalWidth = rectToMove.size.width / shrinkScale;
-        retRect.origin.x += (finalWidth - retRect.size.width) / 2;
+        retRect.origin.x -= (finalWidth - retRect.size.width) / 2;
         retRect.size.width = finalWidth;
     }
     
@@ -371,7 +372,7 @@
     CIDetector *detector = [CIDetector detectorOfType:CIDetectorTypeFace
                                               context:context
                                               options:opts];
-    NSArray *features = [detector featuresInImage:ciImage options:nil];
+    NSArray *features = [detector featuresInImage:ciImage options:@{CIDetectorImageOrientation : @(kCGImagePropertyOrientationUp)}];
     return features;
 }
 
