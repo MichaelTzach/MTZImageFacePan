@@ -78,6 +78,21 @@
 
 #pragma mark - Public
 
++(void)renderImageFromImage:(UIImage *)image withOptions:(MTZImageFacePanOptions *)options finishedRenderingBlockOnMainQueue:(void (^)(UIImage *))finishedRendering {
+    [self renderImageFromImage:image withOptions:options finishedRenderingBlock:finishedRendering performBlockOnQueue:dispatch_get_main_queue()];
+}
+
++(void)renderImageFromImage:(UIImage *)image withOptions:(MTZImageFacePanOptions *)options finishedRenderingBlock:(void(^)(UIImage *renderedImage))finishedRenderingBlock performBlockOnQueue:(dispatch_queue_t)queue {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+        UIImage *renderedImage = [self renderImageFromImage:image withOptions:options];
+        dispatch_async(queue, ^{
+            if (finishedRenderingBlock) {
+                finishedRenderingBlock(renderedImage);
+            }
+        });
+    });
+}
+
 +(UIImage *)renderImageFromImage:(UIImage *)image withOptions:(MTZImageFacePanOptions *)options {
     NSArray<CIFaceFeature *> *faceFeatures = [self faceFeaturesInImage:image];
     if (![faceFeatures count]) {

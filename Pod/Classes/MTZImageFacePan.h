@@ -35,6 +35,15 @@
 
 @interface MTZImageFacePan : NSObject
 
+//Non-blocking
+
++(void)renderImageFromImage:(UIImage *)image withOptions:(MTZImageFacePanOptions *)options finishedRenderingBlockOnMainQueue:(void(^)(UIImage *renderedImage))finishedRendering;
+
++(void)renderImageFromImage:(UIImage *)image withOptions:(MTZImageFacePanOptions *)options finishedRenderingBlock:(void(^)(UIImage *renderedImage))finishedRenderingBlock performBlockOnQueue:(dispatch_queue_t)queue;
+
+
+//Blocking
+
 +(UIImage *)renderImageFromImage:(UIImage *)image withOptions:(MTZImageFacePanOptions *)options;
 
 +(UIImage *)renderImageFromImage:(UIImage *)image toFitSize:(CGSize)destinationSize;
