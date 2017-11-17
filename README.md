@@ -1,10 +1,5 @@
 # MTZImageFacePan
 
-[![CI Status](http://img.shields.io/travis/Michael Tzach/MTZImageFacePan.svg?style=flat)](https://travis-ci.org/Michael Tzach/MTZImageFacePan)
-[![Version](https://img.shields.io/cocoapods/v/MTZImageFacePan.svg?style=flat)](http://cocoapods.org/pods/MTZImageFacePan)
-[![License](https://img.shields.io/cocoapods/l/MTZImageFacePan.svg?style=flat)](http://cocoapods.org/pods/MTZImageFacePan)
-[![Platform](https://img.shields.io/cocoapods/p/MTZImageFacePan.svg?style=flat)](http://cocoapods.org/pods/MTZImageFacePan)
-
 ## Usage
 
 **ImageFacePan** is easy to use. It has two class methods that render a UIImage from another UIImage.
@@ -49,7 +44,7 @@ pod "MTZImageFacePan"
 
 Michael Tzach, michael.tzach@jivesoftware.com
 
-##License
+## License
 
 ```
 Copyright 2013-2016 Jive Software, Inc.
